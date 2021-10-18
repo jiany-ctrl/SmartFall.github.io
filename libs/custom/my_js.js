@@ -66,15 +66,15 @@ $(document).ready(function() {
     onScroll()
   }
 
-// function showTab(selected, total)
-// {
-//   for(i = 1; i <= total; i += 1)
-//   {
-//     document.getElementById('tabs-' + i).style.display = 'none';
-//   }
+function showTab(selected, total)
+{
+  for(i = 1; i <= total; i += 1)
+  {
+    document.getElementById('tabs-' + i).style.display = 'none';
+  }
 
-//   document.getElementById('tabs-' + selected).style.display = 'block';
-// }
+  document.getElementById('tabs-' + selected).style.display = 'block';
+}
 
   function onScroll() {
     if(navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
